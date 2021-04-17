@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container{
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    background-color: black;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+        "Theater . Home Features Actors Mission Contact . .";
+    color: white;
+    top: 20%;
+}
+
+.Theater{
+    grid-area: Theater;
+    font-family: 'Roboto';
+    font-size: 30px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.Home{
+    grid-area: Home;
+    justify-self: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.Features{
+    grid-area: Features;
+    justify-self: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.Actors{
+    grid-area: Actors;
+    justify-self: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.Mission{
+    grid-area:Mission;
+    justify-self: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.Contact{
+    grid-area:Contact;
+    justify-self: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.heroimg {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(/images/theater.jpg);
+    background-size: cover;
+    margin: 0;
+  }
+
+.heroimg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+h1{
+    margin:auto;
+    font-size: 150px;
+    color: white;
+}
+
+body{
+    margin: 0px;
+}
+
+.grid1  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "raisin1 raisin12 raisin13"
+        "raisin21 raisin22 raisin23"
+        "raisin31 raisin32 raisin33"
+        "raisin41 raisin42 raisin43";
+    grid-gap: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+.container{
+    display: grid;    
+    grid-template-columns: auto;
+    grid-template-columns: auto;
+    border: 1px solid black;
+    margin: 5% 26.5% 1% 24%;
+}
+
+.Date {
+    display: flex;
+    justify-self: left;
+    align-self: left;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.raisin1{
+    grid-area: raisin1;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.raisin12{
+    grid-area: raisin12;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.raisin13{
+    grid-area: raisin13;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+button{
+    background-color: #f7c548;
+    border-color: #a88734 #9c7e31 #846a29;
+    font-size: 150%;
+    padding: 15px;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+.raisin21{
+    grid-area: raisin21;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.raisin22{
+    grid-area: raisin22;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.raisin23{
+    grid-area: raisin23;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.raisin31{
+    grid-area: raisin31;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.raisin32{
+    grid-area: raisin32;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.raisin33{
+    grid-area: raisin33;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.raisin41{
+    grid-area: raisin41;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.raisin42{
+    grid-area: raisin42;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.raisin43{
+    grid-area: raisin43;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid2{
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 3%;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "map info shows social";
+    color: white;
+}
+
+.map{
+    grid-area: map;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+    height: 50%;
+}
+
+.info{
+    grid-area: info;
+    font-family: 'Roboto';
+    font-size: 20px;
+    justify-self: auto;
+    align-self: auto;
+    margin-top: 25%;
+}
+
+.shows{
+    grid-area: shows;
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin-top: 25%;
+}
+
+.social{
+    grid-area: social;
+    font-family: 'Roboto';
+    font-size: 20px;
+    justify-self: auto;
+    align-self: auto;
+    margin-top: 25%; 
+}
+
+footer.p{
+    margin-left: 10px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+hr{
+    width: 350%;
+}

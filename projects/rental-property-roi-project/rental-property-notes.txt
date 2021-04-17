@@ -1,0 +1,40 @@
+Example Duplex - 2 units, 200,000$ property
+
+
+4 squares
+    possibly 4 children of 1 parent?
+
+    1. Income:
+        -Rental Income = 2000$
+        -Laundry Income = 0
+        -Storage Income = 0
+        -Misc Income = 0
+        -Total Monthly Income = 2000
+
+    2. Expenses:
+        -Tax - 150$
+        -Insurance (included in Mortgage?) - 100$
+        -Utilities (electric, water, sewage, garbage, gas) - Tenant pays - 0$
+        -HOA fees? - 0$
+        -Lawn/Snow care - 0$
+        -Vacancy - 5% of RENTAL INCOME (100$)
+        -Repairs - 100$
+        -Capital Expenditures - Every 20 years need new roofing or appliances 100$
+        -Property Management - 10% of the rent (200$)
+        -Mortgage - 860$ 5% interest over 30 year span
+
+        Total Monthly Expenses = 1610$
+    
+    3. Cash Flow:
+        - Income - Expenses (2000 - 1610 = 390)
+        - Annual Cash Flow = 4680$
+
+    4. Cash on Cash ROI (Return on Investment)
+        Down Payment - 40,000$
+        Closing Costs - 3000$ (appraisal, other fees)
+        Rehab Budget - 7000$ 
+        Misc - 0
+        TOTAL Investment - 50,000$
+
+        Annual Cash Flow / Total Investment
+        4680 / 50,000 = 9.36%

@@ -1,0 +1,18 @@
+SQL
+
+LIKE is created the same way as "=" but the LIKE clause is more powerful than =
+
+= is standard if you want to find something exact
+
+You can add wild cards to the LIKE clause or certain values
+% = wildcard
+
+We can also limit the amount of characters using "_" if we want the letter K with 2 characters: LIKE "K__";
+Can combine wildcard and underscore symbols
+if you add a character that you want at the end of your search, you can limit the number of characters as well as specify what you want
+
+Start with the SELECT * and FROM which part of the data you'd like to see what's actually in your database/data
+
+when using greater or less than try to use the same format as the table
+
+DISTINCT keyword allows you to find non-duplicates

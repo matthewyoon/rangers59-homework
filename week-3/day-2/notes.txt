@@ -1,0 +1,12 @@
+lambda()
+    An anonymous in-line function that acts as a one-time use function.
+    Written as "(keyword lambda) (one or more inputs) (colon) (function to be executed)"
+    Instead of looking more pythonic - allows you to view it in a more algebraic way
+
+Map
+    The map function allows you to iterate over an entire list while running a function on each item of the list. This is why the map function works well with lambda's, because it simplifies things and you write less lines of code.
+    The syntax for a map function is "map(function to be used, list to be used)"
+    However, you must be careful, as the map function returns a map object, not a list. To turn it into a list we use the list() type conversion.
+    Map functions return a Map Object - so you must wrap them in a list() to get values returned
+
+

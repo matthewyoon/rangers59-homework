@@ -1,0 +1,112 @@
+.hiw-content-container{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between; /* Aligns flex container's 
+    lines within when there is extra space in the cross axis
+     (horizontally) 
+    width: 75%;*/
+    margin: 50px auto;
+}
+
+/* Content Part 1 & 3*/
+
+.hiw-content-part-1, .hiw-content-part-3{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.hiw-text-1, .hiw-text-2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    line-height: 40px;
+}
+
+.hiw-text-1{
+    border-top: 1px solid gray;
+}
+
+.hiw-text-1 h2, .hiw-text-2 h2{
+    padding: 30px;
+}
+
+/* Content Part Box, or # 2 & 4 */
+
+.hiw-content-part-box{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        content-p2-left content-p2-right;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin: 50px;
+    /* border: 1px solid lightgray;*/
+    border-radius: 35px; 
+    background-color: #0f40da;
+}
+
+.hiw-content-part-box-left{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    background-color:white;
+    border: 1px solid lightgray;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px; 
+    width: 100%;
+    height: 100%;
+}
+
+.hiw-content-part-2 img{
+    width: 100%;
+    flex-grow: 0;
+}
+
+.hiw-content-part-4 img{
+    object-fit: contain;
+    width: inherit;
+    height: inherit;
+}
+
+.hiw-content-part-box-right{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: center;
+    background-color: #0f40da;
+    border: 1px solid lightgray;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    height: 100%;
+}
+
+.hiw-content-part-box-right-text{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+.hiw-content-part-box-right h2{
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 15%;
+}
+
+.hiw-content-part-box-right p{
+    color: white;
+    font-size: 25px;
+    line-height: 30px;
+}

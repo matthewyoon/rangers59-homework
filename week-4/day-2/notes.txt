@@ -1,0 +1,41 @@
+SQL vs NoSQL
+
+NoSQL has no relationships to anything. JSON - dictionary in python
+NoSQL just has a bunch of documents - misc documents that still hold info
+
+Firebase
+Mangodb or Firebase
+
+SQL has to have some sort of relationship
+SQL is tabular - columns and rows
+NoSQL can be but usually not tabular.
+Closest cousin to a SQL database would be Excel
+
+How do we create relationships between SQL databases?
+Using an ERD diagram.
+ERD Entity:
+Each table is represented as an entity in ERD
+Starting from scratch with a new database - diagram first and then bring the code over.
+
+Example Customer
+Primary key and Foreign key
+Bank and a car
+
+Bank can have multiple cars financed
+But one car can only be financed by one bank at a time
+    CARDINALITY:
+    Create relationships between different instances of entities
+    gives us an idea of where to put the foreign key. Usually on the many side of the relationship
+1 to many relationship.
+
+CREATING A DATABASE (USING LUCIDCHART for the ERD)
+
+SERIAL (TYPE) will go up by 1. Count up 1 by 1.
+VARCHAR (TYPE) - "Variable Character" Can have numerical or letter characters. can wrap in (limit ie. 100)
+NUMERIC(5,2) (TYPE) = 5 at least 5 characters, allocate 2 spaces for anything coming after a decimal
+INTEGER (TYPE) - It's going to be a number. self explanatory
+DATE(current Date) (TYPE) = selfexplanatory - written differently in the SQL code -- order_date DATE DEFAULT CURRENT_DATE
+
+When building the database you want to start with the category that doesn't have any foreign keys
+
+ddl - data definition language - CREATE statements in SQL

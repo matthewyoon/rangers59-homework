@@ -1,0 +1,11 @@
+SQL day-4
+Stored Procedures/Functions
+Something that we need to do repeatedly
+
+EX: Late fees at blockbuster
+LANGUAGE plpgsql - allows us to set parameters. more lenient
+
+Can create it once so you can use it repeatedly - can get rid of a stored procedure by using DROP
+
+Difference between function and procedure
+Return something or nothing - similar to a python function

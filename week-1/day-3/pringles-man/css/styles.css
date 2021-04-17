@@ -1,0 +1,92 @@
+@import './eyes.css'; /*Allows us to bring in more css sheets without cluttering the html code if you have multiple css files. Sometimes you dont want it because things can be overwritten*/
+
+@keyframes moveLeftStache{
+    0%{
+        transform: rotate(-60deg);
+    }
+
+    50%{
+        transform: rotate(-40deg);
+    }
+
+    100%{
+        transform: rotate(-60deg);
+    }
+}
+
+@keyframes moveRightStache{
+    0%{
+        transform: rotate(60deg);
+    }
+
+    50%{
+        transform: rotate(40deg);
+    }
+
+    100%{
+        transform: rotate(60deg);
+    }
+}
+
+.famous{
+    text-align: center;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    transform: translate(29vw, 0);
+}
+
+.mustache{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    color: black;
+    border-radius: 100%;
+    /* box-shadow: x-offset, y-offset, blur, spread, color */
+    box-shadow:
+        150px 240px 0 0 black,  /*comma because we want 2 box shadows to represent the 2 sides of the mustache*/
+        300px 240px 0 0 black;
+    top: 50px;
+    left: 50px;
+}
+
+.mustache::before{
+    content: '';
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    border-bottom: 150px solid black;
+    border-radius: 0 0 0 100%;
+    top: 90px;
+    left: 60px;
+    transform: rotate(-60deg);  
+    transform-origin:right 250px;   /*So that the mustache will be right-side up*/
+    animation-name: moveLeftStache;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.mustache::after{
+    content: '';
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 90px;
+    left: 390px;
+    border-bottom: 150px solid black;
+    border-radius: 0 0 100% 0;
+    transform: rotate(60deg);
+    transform-origin: left 250px;
+    animation-name: moveRightStache;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+/*What we covered--
+Pseudo Elements (if you dont want to use margins or padding, top/left/transform might be better because you're not adding to the surface area like when adding margins or padding)
+If you want to move the elements, you have to have them as "absolute" or "relative". "static" will keep it in the same position regardless of any attributes you add to it.*/

@@ -1,0 +1,24 @@
+JOINS
+
+Venn Diagram ex
+Left Joins, Right Joins, Inner Joins
+
+Left Join:
+    Info that is the same or found for both and things that are on the left table
+    Sometimes, will use the WHERE clause to denote where things are empty.
+    Give us results that are empty - WHERE B.key is NULL
+
+Right Join:
+    Same as left join but only data that is intersected will be selected
+
+Inner Join:
+    Intersected data from both tables but not anything that is only in one table
+
+Outer Join:
+    Everything. 
+
+
+
+SUBQUERY
+Assuming the value is available, a way of getting from one table to another without multiple queries
+

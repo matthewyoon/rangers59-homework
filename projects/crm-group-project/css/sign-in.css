@@ -1,0 +1,168 @@
+/*Universal Syles*/
+
+*{
+    font-family: 'lato',sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+}
+
+/*SIGN IN PAGE*/
+
+.signincontainer{
+    display: grid;
+    height: 1080px;
+    width: 1920px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+    signinleft signinright;
+}
+
+.leftbackground{
+    display: flex;
+    height: 100%;
+    background-color: #0f40da;
+    clip-path: ellipse(85% 90% at 5% 10%);
+}
+
+.leftbackground>h2.dont{
+    position: absolute;
+    left: 9vw;
+    top: 8vh;
+    color: white;
+}
+
+.leftbackground>h2.what{
+    position: absolute;
+    left: 5vw;
+    top: 12vh;
+    color: white;
+}
+
+button.try{
+    border: none; 
+    background-color: #0f40da; 
+    color: white;
+    font-size: 18px;
+}
+
+.leftbackground>.signupbuttonsignuppage{
+    position: absolute;
+    left: 12vw;
+    top: 17vh;
+    padding: 5px 30px 5px 30px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: #0f40da;
+    color: white;
+    font-size: 20px;
+}
+
+.moon{
+    position: absolute;
+    top: 30vh;
+    left: 23vh;
+    width: 50%;
+}
+
+.signinright{
+    display: flex;
+    grid-template-columns: 500px 1fr;    
+    grid-gap: 300px;
+}
+
+form.formsignin {
+    position: absolute; 
+    left: 65vw; 
+    top: 25vh;
+}
+
+.signinright>label{
+    grid-column: 1/2;
+}
+
+.signinright>h2{
+    font-size: 60px;
+    position: absolute;
+    top: 10vh;
+    left: 67vw;
+}
+
+input[type=text]{
+    display: flex;
+    grid-column: 2/3;
+    width: 150%;
+    box-sizing: content-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(http://via.placeholder.com/20);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding: 20px 20px 12px 40px;
+    margin-bottom: 50px;
+}
+
+button.signin{
+    border: none;  
+    background-color: #0f40da;
+    color: white;
+    font-size: 18px;
+}
+
+.signin1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #0f40da;
+    background-color: #0f40da;
+    padding: 7px 20px 7px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 40%;
+    position: absolute;
+    left: 7vw;
+}
+
+h5{
+    position: absolute;
+    left: 5vw;
+    top: 44vh;
+    width: 300px;
+    font-size: 15px;
+}
+
+div.fourcircles{
+    position: absolute;
+    display: flex;
+    flex-flow: row;
+    top: 50vh;
+}
+
+.circle{
+    display: flex;
+    flex-flow: row;
+    margin-right: 2vw;
+}
+
+div.logos{
+    position: absolute;
+    display: flex;
+    flex-flow: row;
+    top: 51.2vh;
+    left: 1.4vw;
+}
+
+.logos{
+    display: flex;
+    flex-flow: row;
+    margin-right: 4vw;
+}

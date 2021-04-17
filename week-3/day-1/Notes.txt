@@ -1,0 +1,40 @@
+Regex
+
+Allows you to search through large strings or files.
+We can tell python to search through a file or string and say that we want it
+to search for a very specific thing.
+
+REGEX doesn't come with python so you need to "import re"
+
+re.compile() = compile, pre determines the string to be used in regular expression methods
+
+re.match() = Returns a regex object, a span and a match. 
+    Span is how we can access what we're looking for inside of the string
+match.span = tuple
+Match is good if you're looking for a specific instance of something but it
+will only give you the first instance of where that match occurs.
+
+re.findall() = allows us to look for any instance
+will return a list of all matches whereas a match will return just a single first match item and its span
+
+re.search() = Will scan through the string looking for a match.
+Will return a match object or none 
+search and match do the same thing but match will be a bit quicker because
+it is looking for the first match in the string.
+
+Dont need to be specific like 'abcd' to match you can look for a wider range
+
+{} - Will count the number of occurences not a dict
+
+? will allow us to search for something that occurs 0 or 1 time. 
+
+* will note that whatever char is an optional character
+
++- will note a char that occurs at least once. A more narrow search than *
+
+Unicode = how char are stored in a computer
+
+Raw String (r'') = tells python to interpret something literally
+anything thats passed through python as an rstring will be passed as exactly that
+\n won't create a new line, python will actually include it as part of the string
+

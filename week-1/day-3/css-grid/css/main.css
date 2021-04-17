@@ -1,0 +1,38 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr; /*fractional unit*/
+    grid-template-rows: auto; /*lets the content figure it out self -- should be 4 rows because we have 4 pieces of content*/
+    grid-template-areas: 
+        "adidas apple amazon beats";
+    margin-top: 10vh; /*viewport height*/
+}
+/*we have the different classes that we want to target with the template-areas code*/
+.adidas{
+    grid-area: adidas;
+}
+
+.apple{
+    grid-area: apple;
+}
+
+.amazon{
+    grid-area: amazon;
+}
+
+.beats{
+    grid-area: beats;
+}
+
+div img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Grouping the 4 grid area classes together and add space around the 4 logos*/
+.adidas, .apple, .amazon, .beats{
+    justify-self: center;
+    align-self: center;
+    padding: 3em;
+    max-height: 50vh;
+    border: 1px solid #eee;
+}

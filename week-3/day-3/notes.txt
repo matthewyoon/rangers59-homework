@@ -1,0 +1,42 @@
+In-Place Algorithms
+    No copies - advantages = no extra memory usage
+    contant memory = in-place Algorithms
+Out of place Algorithms
+    ie. Making a copy of a list
+
+How do I tell the time complexity?
+We don't care about anything except exponential increases to time complexity
+Most common time complexities:
+# O(1)
+# O(log(n))
+# O(n)
+# O(nlog(n))
+# O(n^2)
+# Anything above quadratic time is really slow
+# O(n!)
+# O(n^n)
+
+What takes what time?
+# Any loop through an iterable takes linear time O(n)
+# Some operations such as removing from a list are linear O(n)
+# Checking for membership (if i in alist) in lists takes O(n)
+
+# What about bad time complexity? Where does that come from?
+# Nesting
+# Having a O(n) or worse operation that occurs every time another O(n) or worse operation runs
+# Nested for loops (loop within a loop)
+# Removing inside a for loop
+
+# Determine whether or not the amount of steps an operation takes scales with number of inputs
+# Determine whether or not a scaling operation occurs in full every time another operation steps
+
+# What abotu multiple loops that aren't nested?
+# Simplification
+# For the below - each for loop runs individually so it doesn't compound.
+alist = list(range(1,11))
+for x in alist: #O(n)
+    print(x)
+for x in alist: #O(n)
+    print(x)
+
+# O(3*n) = O(n + n + n) = O(n) because infinity * 3 = infinity

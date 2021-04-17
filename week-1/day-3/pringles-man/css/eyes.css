@@ -1,0 +1,55 @@
+/* Start of Pringles Man eye animation*/
+
+@keyframes wink{
+    0%{
+        height: inherit;
+        top: 150px;
+    }
+
+    50%{
+        height: 0px;    /* Animating what happens to the height of the eye*/
+        top: 150px;     /*Don't want the eye to move, want it to stay in the same place. If top didn't exist, the eye would disappear.*/
+    }
+
+    100%{ 
+        height: inherit;
+        top: 150px;
+    }
+}
+
+.eyes{                  /*This is the static eye. Default is top left so we want to position the eye to where we want it and then build the rest of the face around the static eye*/
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 80px;
+    width: 80px;
+    color: black;
+    /* box-shadow: x-offset, y-offset, blur, spread, color */
+    box-shadow: 220px 150px 0 0 black;  /*box-shadow creates the actual eye that we see on the page*/
+    border-radius: 100%;   
+}
+
+.eyes::before{              /*pseudo-element*/
+    content: '';
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 150px;
+    left: 440px;
+    background-color: black;
+    border-radius: 100%;
+    animation-name: wink;   /*wink is what we used above*/
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.eyes::after{
+    content: '';
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    border: 5px solid gold;
+    top: 115px;
+    left: 403px;
+}

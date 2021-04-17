@@ -1,0 +1,31 @@
+.copy is for lists
+[:] will make a copy of a string
+
+class collections
+    Counter
+
+counter(w.split(' '))
+
+dictionaries are unordered by nature. Must sort string before putting it through a function to create a dictionary
+Time Complexity:
+Checking for membership in a list is linear
+Checking for membership in a dict or set is constant
+O is for worst case
+theta for average case
+omega for best case
+
+enumerate built in function
+
+LINKED LISTS
+Singly linked lists
+
+Each item within a linked lists is called a node.
+Create a bunch of nodes in unrelated memory slots but have them linked in a certain order
+
+Why beneficial?
+Arrays need consecutive memory locations. They need to be next to each other
+
+Linked lists - memory slots don't need to be next to each other. very memory efficient
+Disadvantage - finding or adding to the list requires traversing the entire list - linear operation
+    We can only start at the head of the linked list.
+

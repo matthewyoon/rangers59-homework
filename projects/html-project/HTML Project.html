@@ -1,0 +1,267 @@
+<!--Final HTML Project*-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Matthew Yoon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+* {
+   box-sizing:border-box;
+}
+
+body {
+  background-color: #cccccc;
+}
+
+h1 {text-align: center;}
+body {
+  margin: 0;
+  font-family: Cambria;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+p {
+ text-align: justify;
+ font-family:Calibri;
+ font-size: 22px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.righth {
+float:right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #000;
+  color: white;
+}
+
+.topnav a.active:hover {
+  background-color:#ddd;
+  color:black;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img.resize {
+  max-width:100%;
+  max-height:100%;
+}
+
+.image1 {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.hero-image {
+  background-image: url("images/wide-cello.jpg");
+  background-color: #cccccc;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.centerbuttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32%;
+}
+
+#image1 {
+  text-align:left;
+}
+
+#content image2 {
+  float: left;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 3px solid #000;
+    border-radius: 25px;
+    padding: 20px; 
+    margin-top: 20px;
+    margin-left:20px;
+    margin-right:20px;
+}  
+
+.flex-child:first-child {
+    flex: 0 0 70%
+}  
+
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family:Calibri;
+  font-size:20px;
+}
+
+a:hover, a:active {
+  background-color: blue;
+  color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class ="hero-image">
+ <div class ="hero-text">
+  <h1 style="font-size:35px"><bold>Matthew Yoon</bold></h1>
+ </div>
+</div>
+
+<div class="topnav">
+  <a class="active" href="">&#128531 &#128524 &#128561 &#128128</a>
+  <a class="active" href=""><--Daily Moods</a>
+  <a class="active" href="https://github.com/matthewyoon" target="_blank">Github</a>
+  <a class="active" href="https://linkedin.com/in/matthew-yoon-developingmatt" target="_blank">Linkedin</a>
+</div>
+
+<div class="flex-container">
+
+<div class="flex-child 1">
+
+ <div>
+   <h2><u>About Me</u></h2>
+   <p>Hello world! My name is Matt and I was born and raised in Chicago but currently call Boston my home. I am a former healthcare worker turned hopefully into developer. 
+   I worked as an assistant in different private medical practices but during the COVID-19 pandemic decided to pursue a career that had always piqued my interest: coding.
+   Ever since making the big decision to pursue coding, every day has been full of experiencing the unknown which is both a daunting and fulfilling journey. I hope to continue
+   to learn and expand upon my budding knowledge. </p>
+ </div>
+
+ <div id="image1">
+   <img class="image1" border="0" src="images/Self2.jpg" alt="Photo of myself" style="width:27%;" title-"Time is a valuable thing, watch it fly by as the pendulum swings"/>
+ 
+   <img class="image2" border="0" src="images/ASHBASH.jpg" alt="megaphone" style="width:33.3%;" title-"megaphone"/>
+ 
+ <p>Before committing to learning about data, python, and coding in general I wrestled with the idea of switching my career entirely and diving into an unknown world.
+  It took literal months before I took the leap of faith. That being said, I'm eagerly anticipating this next adventure in my life and I just hope I learn some cool things,
+  meet new people, and can celebrate small successes along the way.
+ </p>
+
+  <h3><u>Hobbies</u></h3>
+  <p>I love filling up my free time with things that clear my head and keep me busy. Some examples include cooking, playing games, working out, and more.
+     Lately I've been really into making traditional Japanese ramen with a pork-based tonkotsu broth. It's a long but simple process that keeps my mind and hands busy.</p>
+ </div>
+
+ <div class="row">
+
+   <div class="column">
+    <img class="resize" src="images/Ramen1.jpg" alt="First iteration of homemade ramen" style="width:85%"/>
+   </div>
+   <div class="column">  
+    <img class="resize" src="images/Ramen2.jpg" alt="Second iteration of homemade ramen" style="width:85%"/>
+   </div>
+ </div>
+
+
+  <p>The bowl on the left is my very first iteration of ramen which includes a tonkotsu broth, soft-boiled egg, 
+   char-siu pork, scallions, and store bought noodles.
+   The other bowl is my most recent creation that added a lot more depth and flavor which includes a spicy miso tare, 
+   corn, bean sprouts, black garlic oil,
+   a quarter of a sheet of nori(seaweed), and even handmade egg noodles using an old-fashioned crankable pasta machine. 
+   Can you tell I love food? 
+  </p> 
+
+ <img class="image1" border="0" src="images/COD.jpg" alt="WZ Stats" style = "width:40%;" title-"2.45boi"/>
+   <p>A certain pasttime that seemed to shake the world during the pandemic is a videogame called Call of Duty: Warzone. I'm simultaneously proud and not proud of the time
+     I've put into the game, but at the very least, I have something to show for the time that I've logged in the game. At just about the top 1% of all registered players
+     in the world, I think it's pretty cool. Needless to say, videogames are something I enjoy and will probably continue to enjoy, albeit in a more moderate fashion,
+     for the rest of my life.</p>
+
+</div>
+  
+<div class="flex-child 2">
+  <div class="block justify-start">
+  <h2 style="text-align:center"><u><b>Me</b></u></h2>
+  <img class="center" border="0" src="images/Headshot.jpg" alt="Headshot" title-"Rachel's Wedding"/>
+  <p style="font-size:30px; font-family:Times New Roman; text-align:center"">Follow me!</p>
+  <a class="centerbuttons" href="https://www.instagram.com/matt_yoon/" target=_blank">Instagram</a>
+  <a class="centerbuttons" href="Notwitter.html" target=_blank">Twitter</a>
+  <a class="centerbuttons" href="https://www.facebook.com/matteyoooon/" target=_blank">Facebook</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <h3 style="text-align: center;background-color: gold;">Under Construction, will add more below</h3>
+
+  </div>
+
+
+
+</div>
+  
+</div>
+
+</body>
+</html>
