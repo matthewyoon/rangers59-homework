@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="css/main.css">
+<script src="/js/main.js" defer></script>
+<title>F1 Project</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <nav class="nav-bar" align="center">
+                <!--Nav Items-->
+                <div>
+                    <ul id="horizontal-list">
+                        <a href="index.html" id="nav">
+                            <li>Home</li>
+                        </a>
+                        <a href="#" id="nav">
+                            <li>Racer</li>
+                        </a>
+                        <a href="https://ergast.com/mrd/" id="api_link">
+                            <li>Link to API</li>
+                        </a>
+                        <a href="#" id="click" onclick="clear_data()">
+                            <li>Clear Data</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+
+            <form class="col-12 col-md-12" name="f1_data" id="f1_data">
+                <label for="season">Season</label>
+                <input type="text" name="season" id="season">
+
+                <label for="round">Round</label>
+                <input type="text" name="round" id="round">
+
+                <button type="submit" id="submitButton">See Standings</button>
+            </form>
+
+            <table class="col-12 col-md-12 table">
+                <thead>
+                    <th>Position</th>
+                    <th>Last Name</th>
+                    <th>Sponsor</th>
+                    <th>Nationality</th>
+                    <th>Points</th>
+                </thead>
+                <tbody id="tbody">
+    
+                </tbody>
+            </table>
+
+            <div id="myData"></div>
+
+            <section class="col-12 col-md-12">
+                <div class="row">
+                    <div class="list-group driver-list">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+</html>
