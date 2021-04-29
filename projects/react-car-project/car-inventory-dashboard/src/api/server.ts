@@ -39,7 +39,10 @@ export const server_calls = {
                 'x-access-token': `Bearer ${token}`
             },
             body: JSON.stringify(data) 
-        })
+        });
+        if(!response.ok){
+            console.log('Failed to update new drone data')
+        }
     },
     delete: async (id:string) => {
         const response = await fetch(`https://car-inventory-rangers59-my.herokuapp.com/api/vehicles/${id}`, {
